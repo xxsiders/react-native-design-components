@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
@@ -19,35 +18,6 @@ const Avatar = ({
     lineColor,
     resizeMode
 }) => {
-    Avatar.prototype = {
-        imageStyle: PropTypes.object,
-        containerStyle: PropTypes.object,
-        mh: PropTypes.number,
-        mv: PropTypes.number,
-        ph: PropTypes.number,
-        pv: PropTypes.number,
-        size: PropTypes.number,
-        onPress: PropTypes.func,
-        alignSelf: PropTypes.string,
-        background: PropTypes.string,
-        radius: PropTypes.number,
-        line: PropTypes.number,
-        lineColor: PropTypes.string,
-    }
-    Avatar.defaultProps = {
-        containerStyle: {},
-        imageStyle: {},
-        mh: null,
-        mv: null,
-        ph: null,
-        pv: null,
-        size: null,
-        alignSelf: null,
-        background: null,
-        radius: null,
-        line: null,
-        lineColor: null,
-    };
 
     const styleAvatar = [
         styles.containerStyle,
